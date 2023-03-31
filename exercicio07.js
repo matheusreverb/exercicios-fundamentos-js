@@ -2,8 +2,8 @@
 //Quando o parâmetro inclusivo for true, tenha "entre" como inclusivo, ou seja, considerando se numero é igual a minimo ou a maximo.
 //Caso o parâmetro inclusivo não seja informado, seu valor padrão deverá ser false, portanto, a lógica será exclusiva, não considerando se numero é igual a minimo ou a maximo.
 
-function inBetween(num, min, max, inc) {
-    if (inc == true) {
+function inBetween(num, min, max, between) {
+    if (between == true) {
         return getResult(num, min, max)
     } else {
         return console.log(false)
