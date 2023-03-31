@@ -4,8 +4,12 @@
 const mesArray = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 
 function nomeDoMes(numero) {
-    const numeroConversao = --numero
-    return console.log(mesArray[numeroConversao])
+    if (numero < 1 || numero > 12) {
+        console.log(`Não existe o número de mês ${numero} digite um número entre 1 e 12`)
+    } else {
+        const numeroConversao = --numero
+        return console.log(mesArray[numeroConversao])
+    }
 }
 
-nomeDoMes(4)
+nomeDoMes(02)
